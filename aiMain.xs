@@ -20893,7 +20893,7 @@ minInterval 5
 rule ageUpgradeMonitor
 inactive
 group tcComplete
-minInterval 15
+minInterval 1
 {
    int specialAgeTech = -1;   // Used for personality-specific overrides
    int politician = -1;
