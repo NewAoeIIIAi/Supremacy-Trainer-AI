@@ -38702,7 +38702,7 @@ mininterval 10
           sendChatToAllies("Primary Army Unit: "+namePrimary+"");
           lastTribSentTime = xsGetTime();
        }
-    }*/
+    }
 	    int gLandUnit = kbUnitPickGetResult(gLandUnitPicker, 0);
     string namePrimary = kbGetUnitTypeName(gLandUnit);
     if (kbUnitPickGetResult(gLandUnitPicker, 0) < 0)
@@ -38714,6 +38714,7 @@ mininterval 10
           lastTribSentTime = xsGetTime();
        }
     /////////////////////////////////////////////////////////
+	*/
 }
 
 rule attackMonitor
