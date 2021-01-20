@@ -27886,13 +27886,16 @@ void main(void)
 	case cDifficultyModerate: // Moderate
 	{
            if (gSPC == true)
-              kbSetPlayerHandicap( cMyID, startingHandicap * baselineHandicap * 0.75 ); // minus 25% for scenarios
+              kbSetPlayerHandicap( cMyID, startingHandicap * baselineHandicap * 1.0 ); // minus 25% for scenarios
            else
               kbSetPlayerHandicap( cMyID, startingHandicap * baselineHandicap * 0.65 ); // minus 35%
 	   break;
 	}
 	case cDifficultyHard: // Hard
 	{
+       if (gSPC == true)
+       kbSetPlayerHandicap( cMyID, startingHandicap * baselineHandicap * 1.5 ); // minus 25% for scenarios
+       else
 	   kbSetPlayerHandicap( cMyID, startingHandicap * baselineHandicap * 1.0 );    // 1.0 handicap at hard, i.e. no bonus
 	   break;
 	}
